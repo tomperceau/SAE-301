@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Variables de police */
+  --font-family-primary: 'Bitter', serif;
+  
+  /* Variables de couleurs principales */
+  --color-primary-black: #000000;
+  --color-primary-white: #ffffff;
+  --color-primary-yellow: #ffc300;
+  --color-primary-orange: #ff6b00;
+  
+  /* Variables de couleurs secondaires */
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #d1d5dc;
+  --color-gray-300: #d1d5dc;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+  
+  /* Variables de couleurs de statut */
+  --color-status-red: #f54900;
+  --color-status-yellow: #f2bd00;
+  --color-status-green: #10b981;
+  
+  /* Variables de couleurs du header/footer */
+  --color-header-bg: #000000;
+  --color-header-border: #1e2939;
+  --color-footer-bg: #000000;
+  --color-footer-text: #99a1af;
+  
+  /* Variables de couleurs de texte */
+  --color-text-primary: #000000;
+  --color-text-secondary: #4a5565;
+  --color-text-muted: #99a1af;
+  --color-text-placeholder: #99a1af;
+  
+  /* Variables de couleurs de fond */
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f9fafb;
+  --color-bg-card: #ffffff;
+  --color-bg-image: #f3f4f6;
+  
+  /* Variables de couleurs de bordures */
+  --color-border-primary: #d1d5dc;
+  --color-border-secondary: #e5e7eb;
+  --color-border-card: #e5e7eb;
+
+  /* Configuration Tailwind avec nos variables */
+  --font-family-sans: var(--font-family-primary);
+  
+  /* Couleurs personnalisées */
+  --color-warhammer-black: var(--color-primary-black);
+  --color-warhammer-white: var(--color-primary-white);
+  --color-warhammer-yellow: var(--color-primary-yellow);
+  --color-warhammer-orange: var(--color-primary-orange);
+  
+  /* Couleurs de statut */
+  --color-warhammer-red: var(--color-status-red);
+  --color-warhammer-yellow-status: var(--color-status-yellow);
+  
+  /* Couleurs de texte */
+  --color-warhammer-text-primary: var(--color-text-primary);
+  --color-warhammer-text-secondary: var(--color-text-secondary);
+  --color-warhammer-text-muted: var(--color-text-muted);
+  
+  /* Couleurs de fond */
+  --color-warhammer-bg-primary: var(--color-bg-primary);
+  --color-warhammer-bg-secondary: var(--color-bg-secondary);
+  --color-warhammer-bg-card: var(--color-bg-card);
+  --color-warhammer-bg-image: var(--color-bg-image);
+  
+  /* Couleurs de bordures */
+  --color-warhammer-border: var(--color-border-primary);
+  --color-warhammer-border-secondary: var(--color-border-secondary);
+  --color-warhammer-border-card: var(--color-border-card);
+  
+  /* Couleurs header/footer */
+  --color-warhammer-header-bg: var(--color-header-bg);
+  --color-warhammer-header-border: var(--color-header-border);
+  --color-warhammer-footer-bg: var(--color-footer-bg);
+  --color-warhammer-footer-text: var(--color-footer-text);
+}
+
+/* Application globale de la police Bitter */
+body {
+  font-family: var(--font-family-primary), serif;
+}
+
+* {
+  font-family: inherit;
+}
+
+/* Styles pour les filtres */
+.filter-btn {
+  background-color: var(--color-bg-primary);
+  border: 2px solid var(--color-primary-black);
+  border-radius: 9999px;
+  color: var(--color-text-primary);
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.filter-btn:hover {
+  background-color: var(--color-gray-50);
+}
+
+.filter-btn.active {
+  background-color: var(--color-primary-yellow);
+  color: var(--color-primary-black);
+}
+
+.clear-filters-btn {
+  color: var(--color-text-secondary);
+  font-weight: 400;
+  font-size: 0.875rem;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.clear-filters-btn:hover {
+  color: var(--color-text-primary);
+}

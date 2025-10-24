@@ -88,47 +88,8 @@
 }
 
 /* Application globale de la police Bitter */
-body {
-  font-family: var(--font-family-primary), serif;
-}
-
-* {
-  font-family: inherit;
-}
-
-/* Styles pour les filtres */
-.filter-btn {
-  background-color: var(--color-bg-primary);
-  border: 2px solid var(--color-primary-black);
-  border-radius: 9999px;
-  color: var(--color-text-primary);
-  font-weight: 400;
-  font-size: 1rem;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  transition: all 0.2s ease;
-  cursor: pointer;
-}
-
-.filter-btn:hover {
-  background-color: var(--color-gray-50);
-}
-
-.filter-btn.active {
-  background-color: var(--color-primary-yellow);
-  color: var(--color-primary-black);
-}
-
-.clear-filters-btn {
-  color: var(--color-text-secondary);
-  font-weight: 400;
-  font-size: 0.875rem;
-  letter-spacing: 0.035em;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: color 0.2s ease;
-}
-
-.clear-filters-btn:hover {
-  color: var(--color-text-primary);
-}
+/* Application globale de la police Bitter
+   NOTE: Les styles utilitaires (ex: boutons de filtre) ont été migrés
+   vers des classes Tailwind directement dans les fichiers HTML.
+   Ce fichier conserve uniquement les imports et les variables de thème
+   (ne pas supprimer les lignes ci-dessus). */
